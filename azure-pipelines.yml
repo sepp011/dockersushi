@@ -45,13 +45,12 @@ stages:
     steps:
     - task: AzureRmWebAppDeployment@3
       inputs:
-        azureSubscription: 'Azure subscription 1'
+        azureSubscription: 'Azure subscription 1(007482a7-5430-4373-9880-49c0dfd382f8)'
         appType: 'applinux'
         WebAppName: 'sushidocker'
         DockerNamespace: '$(containerRegistry)'
         DockerRepository: '$(imageRepository)'
         DockerImageTag: '$(Build.BuildId)'
-        webAppUri: webAppUrl
         TakeAppOfflineFlag: true
         UseWebDeploy: true
         RenameFilesFlag: true
