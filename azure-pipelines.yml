@@ -45,7 +45,7 @@ stages:
     steps:
     - task: AzureRmWebAppDeployment@3
       inputs:
-        azureSubscription: 'Pay-as-you-go'
+        azureSubscription: 'Azure subscription 1'
         appType: 'applinux'
         WebAppName: 'sushidocker'
         DockerNamespace: '$(containerRegistry)'
